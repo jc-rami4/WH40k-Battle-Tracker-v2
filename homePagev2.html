@@ -10,7 +10,57 @@
     </head>
 
     <body>
+        <!--Home Page-->
+        <div class="home-page">
+            <div class="jumbotron">
+            <!--Welcome Sign-->
+            <h1 class="display-4">Warhammer 40K <br> Battle Tracker</h1>
+            <hr class="my-4">
+            <p class="lead">Your home for tracking your Warhammer 40K Battles in real time. All you need to do is start playing!</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!--Deployment Zones-->
+                    <div class="col-sm rules deployment">
+                        <h3>Deployment Zone</h3>
+                        <img id="deploy_zn-img" src="placeholder_images/cardPH-vertical.png" alt="Deployment Zone">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
+                    </div>
+                    <!--Terrain Layouts-->
+                    <div class="col-sm rules layout">
+                        <h3>Terrain Layout</h3>
+                        <img id="terrain-img" src="placeholder_images/cardPH-horizontal.png" alt="Terrain Layout">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Mission Rules/Twists-->
+                    <div class="col-sm rules twist">
+                        <h3>Mission Rule</h3>
+                        <img id="twist-img" src="placeholder_images/cardPH-vertical.png" alt="Mission Rule">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
+                    </div>
+                    <!--Primary Missions Type-->
+                    <div class="col-sm rules primary">
+                        <h3>Primary Mission</h3>
+                        <img id="primary-img-home" src="placeholder_images/cardPH-vertical.png" alt="Primary Mission">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
+                    </div>
+                </div>
+            </div>
 
+
+            <!--Start Button and Reset Button-->
+            <div class="start_round">
+                <button type="button" class="btn btn-success start-btn" id="start-btn" onclick="">Start Game</button>
+
+                <button type="button" class="btn btn-primary reset-btn" id="reset-btn" onclick="">Reset Game</button>
+            </div>
+        </div>
 
 
 
