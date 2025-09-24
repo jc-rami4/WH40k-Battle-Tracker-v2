@@ -9,16 +9,16 @@
 
     // Image Arrays
     const primaryMissions = [
-        "PM_burden-of-trust.svg",
-        "PM_hidden-supplies.svg",
-        "PM_linchpin.svg",
-        "PM_purge-the-foe.svg",
-        "PM_scorched-earth.svg",
-        "PM_supply-drop.svg",
-        "PM_take-and-hold.svg",
-        "PM_terraform.svg",
-        "PM_the-ritual.svg",
-        "PM_unexploded-ordinance.svg"
+        "primary-missions/PM_burden-of-trust.svg",
+        "primary-missions/PM_hidden-supplies.svg",
+        "primary-missions/PM_linchpin.svg",
+        "primary-missions/PM_purge-the-foe.svg",
+        "primary-missions/PM_scorched-earth.svg",
+        "primary-missions/PM_supply-drop.svg",
+        "primary-missions/PM_take-and-hold.svg",
+        "primary-missions/PM_terraform.svg",
+        "primary-missions/PM_the-ritual.svg",
+        "primary-missions/PM_unexploded-ordinance.svg"
     ];
     const terrainLayouts = [
         "terrain_layouts/layout1.png",
@@ -48,7 +48,19 @@
         "twist-rules/Tw_point-blank.svg",
         "twist-rules/Tw_rapid-escalation.svg",
         "twist-rules/Tw_ruinscape.svg"
-    ]
+    ];
+
+    function imageRandom(imageList){
+        randomMax = imageList.length;
+        randomNum = Math.floor(Math.random() * randomMax);
+        // imageList[randomNum];
+        console.log(imageList[randomNum]);
+    };
+
+    imageRandom(primaryMissions)
+    imageRandom(terrainLayouts)
+    imageRandom(deployZones)
+    imageRandom(twistList)
 
 
 
