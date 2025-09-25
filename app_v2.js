@@ -50,17 +50,26 @@
         "twist-rules/Tw_ruinscape.svg"
     ];
 
-    function imageRandom(imageList){
+    // Element IDs
+    const deployZonesId = document.getElementById('deploy_zn-img');
+    const terrainLayoutId = document.getElementById('terrain-img');
+    const primaryMissionHomeId = document.getElementById('primary-img-home');
+    const twistsId = document.getElementById('twist-img');
+
+    function imageRandom(imageList, imageId){
         randomMax = imageList.length;
         randomNum = Math.floor(Math.random() * randomMax);
-        // imageList[randomNum];
-        console.log(imageList[randomNum]);
+        imageId.src = imageList[randomNum];
     };
 
-    imageRandom(primaryMissions)
-    imageRandom(terrainLayouts)
-    imageRandom(deployZones)
-    imageRandom(twistList)
+    function imageManual(imageList, imageId, num){
+        imageId.src = imageList[num];
+    };
+
+    imageRandom(primaryMissions);
+    imageRandom(terrainLayouts);
+    imageRandom(deployZones);
+    imageRandom(twistList);
 
 
 

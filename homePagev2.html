@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title id="tab-header">Home - Warhammer 40K Battle Tracker</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
@@ -13,10 +12,38 @@
         <!--Home Page-->
         <div class="home-page">
             <div class="jumbotron">
-            <!--Welcome Sign-->
-            <h1 class="display-4">Warhammer 40K <br> Battle Tracker</h1>
-            <hr class="my-4">
-            <p class="lead">Your home for tracking your Warhammer 40K Battles in real time. All you need to do is start playing!</p>
+                <!--Welcome Sign-->
+                <h1 class="display-4">Warhammer 40K <br> Battle Tracker</h1>
+                <hr class="my-4">
+                <p class="lead">Your home for tracking your Warhammer 40K Battles in real time. All you need to do is start playing!</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        Mission Pool
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Custom Mission</a>
+                        <a class="dropdown-item" href="#">Mission A</a>
+                        <a class="dropdown-item" href="#">Mission B</a>
+                        <a class="dropdown-item" href="#">Mission C</a>
+                        <a class="dropdown-item" href="#">Mission D</a>
+                        <a class="dropdown-item" href="#">Mission E</a>
+                        <a class="dropdown-item" href="#">Mission F</a>
+                        <a class="dropdown-item" href="#">Mission G</a>
+                        <a class="dropdown-item" href="#">Mission H</a>
+                        <a class="dropdown-item" href="#">Mission I</a>
+                        <a class="dropdown-item" href="#">Mission J</a>
+                        <a class="dropdown-item" href="#">Mission K</a>
+                        <a class="dropdown-item" href="#">Mission L</a>
+                        <a class="dropdown-item" href="#">Mission M</a>
+                        <a class="dropdown-item" href="#">Mission N</a>
+                        <a class="dropdown-item" href="#">Mission O</a>
+                        <a class="dropdown-item" href="#">Mission P</a>
+                        <a class="dropdown-item" href="#">Mission Q</a>
+                        <a class="dropdown-item" href="#">Mission R</a>
+                        <a class="dropdown-item" href="#">Mission S</a>
+                        <a class="dropdown-item" href="#">Mission T</a>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -48,7 +75,24 @@
                         <h3>Primary Mission</h3>
                         <img id="primary-img-home" src="placeholder_images/cardPH-vertical.png" alt="Primary Mission">
                         <br>
-                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
+                        <button type="button" class="btn btn-primary" onclick="imageRandom(primaryMissions, primaryMissionHomeId)">Shuffle</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Primary Missions
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 0)">Burden of Trust</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 1)">Hidden Supplies</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 2)">Linchpin</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 3)">Purge the Foe</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 4)">Scorched Earth</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 5)">Supply Drop</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 6)">Take and Hold</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 7)">Terraform</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 8)">The Ritual</a>
+                                <a class="dropdown-item" onclick="imageManual(primaryMissions, primaryMissionHomeId, 9)">Unexploded Ordinance</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +151,8 @@
 
 
 
-
         <script src="app_v2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,3 +1,23 @@
 body{
    text-align: center;
 }
+
+img {
+   padding: 10px;
+   width: 230px;
+   height: 320px;
+}
+
+.rules {
+   text-align: center;
+   background-color: rgba(184, 184, 184, 0.8);
+
+
+   padding: 35px;
+   margin: 20px;
+}
+
+#terrain-img {
+   width: 320px;
+   height: 230px;
+}
