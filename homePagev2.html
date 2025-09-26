@@ -45,31 +45,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container start_rules">
                 <div class="row">
-                    <!--Deployment Zones-->
-                    <div class="col-sm rules deployment">
-                        <h3>Deployment Zone</h3>
-                        <img id="deploy_zn-img" src="placeholder_images/cardPH-vertical.png" alt="Deployment Zone">
-                        <br>
-                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
-                    </div>
-                    <!--Terrain Layouts-->
-                    <div class="col-sm rules layout">
-                        <h3>Terrain Layout</h3>
-                        <img id="terrain-img" src="placeholder_images/cardPH-horizontal.png" alt="Terrain Layout">
-                        <br>
-                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--Mission Rules/Twists-->
-                    <div class="col-sm rules twist">
-                        <h3>Mission Rule</h3>
-                        <img id="twist-img" src="placeholder_images/cardPH-vertical.png" alt="Mission Rule">
-                        <br>
-                        <button type="button" class="btn btn-primary" onclick="">Shuffle</button>
-                    </div>
                     <!--Primary Missions Type-->
                     <div class="col-sm rules primary">
                         <h3>Primary Mission</h3>
@@ -94,12 +71,79 @@
                             </div>
                         </div>
                     </div>
+                    <!--Deployment Zones-->
+                    <div class="col-sm rules deployment">
+                        <h3>Deployment Zone</h3>
+                        <img id="deploy_zn-img" src="placeholder_images/cardPH-vertical.png" alt="Deployment Zone">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="imageRandom(deployZones, deployZonesId)">Shuffle</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Deployment Zones
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 0)">Crucible of Battle</a>
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 1)">Dawn of War</a>
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 2)">Hammer and Anvil</a>
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 3)">Search and Destroy</a>
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 4)">Sweeping Engagement</a>
+                                <a class="dropdown-item" onclick="imageManual(deployZones, deployZonesId, 5)">Tipping Point</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Terrain Layouts-->
+                    <div class="col-sm rules layout">
+                        <h3>Terrain Layout</h3>
+                        <img id="terrain-img" src="placeholder_images/cardPH-horizontal.png" alt="Terrain Layout">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="imageRandom(terrainLayouts, terrainLayoutsId)">Shuffle</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Terrain Layouts
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 0)">Layout 1</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 1)">Layout 2</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 2)">Layout 3</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 3)">Layout 4</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 4)">Layout 5</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 5)">Layout 6</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 6)">Layout 7</a>
+                                <a class="dropdown-item" onclick="imageManual(terrainLayouts, terrainLayoutsId, 7)">Layout 8</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Mission Rules/Twists-->
+                    <div class="col-sm rules twist">
+                        <h3>Twists (Optional)</h3>
+                        <img id="twist-img" src="placeholder_images/cardPH-vertical.png" alt="Mission Rule">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="imageRandom(twistList, twistsId)">Shuffle</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                Twists
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 0)">Adapt or Die</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 1)">Bloodlustt</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 2)">High Octane</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 3)">Lords of War</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 4)">Martial Pride</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 5)">Night Fighting</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 6)">Point Blank</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 7)">Rapid Escalation</a>
+                                <a class="dropdown-item" onclick="imageManual(twistList, twistsId, 8)">Ruinscape</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
             <!--Start Button and Reset Button-->
-            <div class="start_round">
+            <div class="start_round start_rules">
                 <button type="button" class="btn btn-success start-btn" id="start-btn" onclick="">Start Game</button>
 
                 <button type="button" class="btn btn-primary reset-btn" id="reset-btn" onclick="">Reset Game</button>

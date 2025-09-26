@@ -8,6 +8,10 @@ img {
    height: 320px;
 }
 
+/* .start_rules {
+   display: none;
+} */
+
 .rules {
    text-align: center;
    background-color: rgba(184, 184, 184, 0.8);

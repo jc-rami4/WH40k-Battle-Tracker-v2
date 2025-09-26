@@ -52,30 +52,33 @@
 
     // Element IDs
     const deployZonesId = document.getElementById('deploy_zn-img');
-    const terrainLayoutId = document.getElementById('terrain-img');
+    const terrainLayoutsId = document.getElementById('terrain-img');
     const primaryMissionHomeId = document.getElementById('primary-img-home');
     const twistsId = document.getElementById('twist-img');
 
+    // Tournament Mission Sets
+    // function tournamentRules(primaryMissionNum, deployZoneNum){
+    // }
+
+    // Randomized Card Draw
     function imageRandom(imageList, imageId){
         randomMax = imageList.length;
         randomNum = Math.floor(Math.random() * randomMax);
         imageId.src = imageList[randomNum];
     };
 
+    // Manual Card Draw
     function imageManual(imageList, imageId, num){
         imageId.src = imageList[num];
     };
 
-    imageRandom(primaryMissions);
-    imageRandom(terrainLayouts);
-    imageRandom(deployZones);
-    imageRandom(twistList);
-
+// End of Home JS
 
 
 
 // Rounds JS
 
+    // Element IDs
+    let primaryMissionRoundId = primaryMissionHomeId;
 
-
-
+//End of Round JS
